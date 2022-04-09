@@ -1,0 +1,177 @@
+body {
+    font-family: "Poor Story", cursive;
+    box-sizing: border-box;
+    background-color: #ece8e8;
+}
+
+.container {
+    display: flex;
+}
+
+.imagen {
+    width: 31.25rem;
+}
+
+.img-travel {
+    width: 31.25rem;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 9.375rem;
+    left: 1.5625rem;
+    color: white;
+    font-size: 30px;
+}
+
+.logo-img {
+    width: 100px;
+    height: 100px;
+}
+
+.formulario {
+    padding: 30px;
+    font-family: "Montserrat", sans-serif;
+    color: #444;
+    width: 43.75em;
+}
+legend {
+    font-size: 25px;
+    font-weight: bold;
+}
+.content-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+label {
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input {
+    border: 2px solid #e5e7eb;
+    height: 35px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 15px;
+    outline: 1px solid rgb(220, 225, 215);
+}
+
+input:focus {
+    outline: 2px solid dodgerblue;
+}
+
+input[type="password"]:invalid {
+    outline: 2px solid red;
+}
+.error {
+    display: block;
+}
+
+.signup {
+    width: 250px;
+    font-size: 20px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #2482ec;
+    color: white;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #2482ec;
+}
+
+a:hover {
+    color: #0050ac;
+}
+
+a:visited {
+    color: #0050ac;
+}
+@media (max-width: 425px) {
+    body {
+        font-size: 20px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen {
+        width: 100%;
+    }
+    .img-travel {
+        width: 100%;
+    }
+    .logo {
+        left: 60px;
+        font-size: 40px;
+    }
+    .text {
+        font-size: 15px;
+    }
+    .formulario {
+        width: 100%;
+        padding: 0;
+    }
+    .content-form {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        width: 350px;
+    }
+}
+@media (max-width: 375px) {
+    body {
+        font-size: 17px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen {
+        width: 100%;
+    }
+    .img-travel {
+        width: 375px;
+    }
+    .logo {
+        left: 40px;
+    }
+    .text {
+        font-size: 15px;
+    }
+    .formulario {
+        width: 350px;
+        padding: 0px;
+    }
+    .content-form {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        width: 350px;
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poor+Story&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="imagen">
+                <img
+                    class="img-travel"
+                    src="https://images.unsplash.com/photo-1648664619887-00aa821a1c94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80"
+                    alt=""
+                />
+                <div class="logo">
+                    <div>
+                        <img
+                            class="logo-img"
+                            src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+                            alt="logo-TOP"
+                        />
+                    </div>
+                    <div>
+                        <p class="logo-text">ODIN TRAVEL</p>
+                    </div>
+                </div>
+            </div>
+            <div class="formulario">
+                <div class="text">
+                    <h2>
+                        Dentro de veinte años estarás más decepcionado por lo
+                        que no hiciste que por lo que hiciste, entonces que
+                        esperas para creat tu cuenta y salir a viajar por el
+                        mundo
+                    </h2>
+                </div>
+                <form action="/login" method="post">
+                    <fieldset class="content-form">
+                        <legend>Vamos, hazlo!</legend>
+                        <div class="item-grid">
+                            <label for="first_name">First Name</label>
+                            <input
+                                type="text"
+                                name="first_name"
+                                id="first_name"
+                                placeholder="Thor"
+                            />
+                        </div>
+                        <div class="item-grid">
+                            <label for="last_name">Last Name</label>
+                            <input
+                                type="text"
+                                name="last_name"
+                                id="last_name"
+                                placeholder="Odinson"
+                            />
+                        </div>
+                        <div class="item-grid">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="thorodinson@mail.com"
+                            />
+                        </div>
+                        <div class="item-grid">
+                            <label for="phone_number">Phone Number</label>
+                            <input
+                                type="tel"
+                                placeholder="333-333-333"
+                                name="phone_number"
+                                id="phone_number"
+                                minlength="9"
+                                required
+                            />
+                        </div>
+                        <div class="item-grid">
+                            <label for="password">Password</label>
+                            <input
+                                pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
+                                type="password"
+                                name="password"
+                                id="password"
+                                pattern=""
+                                title="*Password do not match"
+                            />
+                        </div>
+                        <div class="item-grid">
+                            <label for="confirm_password"
+                                >Confirm Password</label
+                            >
+                            <input
+                                type="password"
+                                name="confirm_password"
+                                id="confirm_password"
+                                title="No coinciden las contraseñas"
+                            />
+                        </div>
+                    </fieldset>
+                    <button class="signup" type="submit">Create Account</button>
+                </form>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+        <!-- Imagenes: -->
+        <!-- https://images.unsplash.com/photo-1648664619887-00aa821a1c94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80 -->
+        <!-- https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png -->
+    </body>
+</html>
